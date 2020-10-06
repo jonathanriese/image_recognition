@@ -21,11 +21,9 @@ let videoEl;
 function randomVideo() {
   const videoNo = "vid" + (Math.floor(Math.random() * 3) + 1);
   videoEl = document.getElementById(videoNo);
+  videoEl.classList.remove("hide");
   videoEl.play();
-
-  videoEl.classList.remove("hide")
-  if (videoEl.classList.contains("hide") == false) {}
-  console.log('video numer:' +  videoNo)
+  console.log('video numer:' +  videoNo);
 }
 
 
